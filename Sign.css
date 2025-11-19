@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0d6efd;
+    padding: 1rem 0;
+    position: fixed;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffdd57;
+}
+
+/* =========================
+   SIGNUP FORM CONTAINER
+========================= */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 1rem;
+}
+
+.signup-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.signup-card h2 {
+    margin-bottom: 1.5rem;
+    color: #0d6efd;
+}
+
+.signup-card label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+.signup-card input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.signup-card input:focus {
+    border-color: #0d6efd;
+    outline: none;
+}
+
+/* SIGNUP BUTTON */
+.signup-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+
+/* LOGIN LINK BELOW FORM */
+.login-link {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.login-link a {
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ffdd57;
+    margin: 0 0.5rem;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 760px) {
+    .signup-card {
+        padding: 1.5rem;
+    }
+
+    .signup-card input,
+    .signup-btn {
+        font-size: 0.95rem;
+    }
+}
